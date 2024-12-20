@@ -12,5 +12,7 @@ namespace mvc.Models
         public int? Pace { get; set; }
 
         public int? Melga { get; set; }
+        public ICollection<Club> Clubs { get; set; }
+        public ICollection<Race> Race { get; set; }
     }
 }

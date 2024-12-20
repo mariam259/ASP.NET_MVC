@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using mvc.Data.Enum;
 namespace mvc.Models
 {
-    public class Races
+    public class Race
     {
         [Key]
         public int Id { get; set; }
