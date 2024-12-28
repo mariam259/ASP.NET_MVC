@@ -41,7 +41,7 @@ namespace mvc.Repository
 
         public async Task<Race> GetByIdAsync(int id)
         {
-            return await _context.Races.FirstOrDefaultAsync(i => i.Id == id);
+            return await _context.Races.Include(i => i.Address).FirstOrDefaultAsync(i => i.Id == id);
         }
 
         public bool Save()
